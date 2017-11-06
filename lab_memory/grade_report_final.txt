@@ -1,0 +1,24 @@
+Grading r9685 by chongye2 committed on Sat Feb  4 00:23:05 CST 2017
+Monad Autograder
+Testing lab_memory at 2017-02-06 00:26:51
+
+"There's no real reason for a lot of the things that I say." ~ Urvashi Khandelwal
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_constructor (asan) [5 pts]  - passed
+test_allocate (asan)  . [5 pts]  - passed
+test_printrooms (asan)  [20 pts] - passed
+test_any_output . . . . [30 pts] - passed
+test_correct_output . . [40 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+

@@ -1,0 +1,82 @@
+Grading r18662 by chongye2 committed on Sun Feb 19 15:09:01 CST 2017
+Monad Autograder
+Testing lab_gdb2 at 2017-02-20 00:19:28
+
+"Should array indices start at 0 or 1? My compromise of 0.5 was rejected without, I thought, proper consideration." ~ Stan Kelly-Bootle
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+testFind1_I . . . . . . [5 pts]  - passed
+testFind1_R . . . . . . [5 pts]  - passed
+testFind2_I . . . . . . [5 pts]  - passed
+testFind2_R . . . . . . [5 pts]  - passed
+testFind3_I . . . . . . [10 pts] - passed
+testFind3_R . . . . . . [10 pts] - FAILED: unit_tests.cpp:181: ret != solution: (0,0,0) a:50 != (42,42,42)
+testInsertAscending . . [5 pts]  - passed
+testInsertAscendingBack [5 pts]  - passed
+testInsertRandom  . . . [8 pts]  - passed
+testInsertRandomBack  . [8 pts]  - passed
+testInsertTough (asan)  [10 pts] - FAILED: unit_tests.cpp:46: List sizes don't match
+testRemoveEasy  . . . . [5 pts]  - FAILED: unit_tests.cpp:341: Incorrect return value
+testRemoveHard (asan) . [10 pts] - FAILED: unit_tests.cpp:379: Incorrect return value
+testConstructor1 (asan) [4 pts]  - passed
+testConstructor2 (asan) [5 pts]  - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 65
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+testFind3_R [10 points]
+Result: FAILED: unit_tests.cpp:181: ret != solution: (0,0,0) a:50 != (42,42,42)
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+
+----------------------------------------------------------------
+testInsertTough (run under asan) [10 points]
+Result: FAILED: unit_tests.cpp:46: List sizes don't match
+Took unknown time (1000ms timeout)
+Output:
+----------------------------------------------------------------
+Running testInsertTough [worth 10 points, output below]
+< 1, 3, 7, 34, 34, 81, 99, 99 >
+< 1, 3, 7, 34, 34, 81, 99, 99 >
+Result: FAILED:
+unit_tests.cpp:46: List sizes don't match
+
+----------------------------------------------------------------
+testRemoveEasy [5 points]
+Result: FAILED: unit_tests.cpp:341: Incorrect return value
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+< 1, 2, 3, 4, 5, 6, 8, 9, 10 >
+< 1, 2, 3, 4, 5, 6, 8, 9, 10 >
+
+----------------------------------------------------------------
+testRemoveHard (run under asan) [10 points]
+Result: FAILED: unit_tests.cpp:379: Incorrect return value
+Took unknown time (1000ms timeout)
+Output:
+----------------------------------------------------------------
+Running testRemoveHard [worth 10 points, output below]
+Result: FAILED:
+unit_tests.cpp:379: Incorrect return value
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 65
+

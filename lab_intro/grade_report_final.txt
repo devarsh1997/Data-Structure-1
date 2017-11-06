@@ -1,0 +1,22 @@
+Grading r2670 by chongye2 committed on Sun Jan 22 13:06:19 CST 2017
+Monad Autograder
+Testing lab_intro at 2017-01-23 00:15:07
+
+"I think Microsoft named .NET so it wouldn't show up in a Unix directory listing." ~ Oktal
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+testBrighten  . [33 pts] - passed
+testCrosshairs  [33 pts] - passed
+testBlendImages [34 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 100
+
